@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My Cart</title>
+</head>
+
+<body>
+    <!--Mini Cart-->
+    <aside id="mini-cart">
+        <div class="aside-heading">
+            <span><img class="cart-icon1" src="images/cart2.svg" /></span>
+            <h2>Cart</h2>
+        </div>
+        </div>
+        <div class="product" id="incart">
+            <img class="product-image" src="images/sample-product.jpg" />
+            <div class="product-info">
+                <div class="product-info-text">
+                    <div class="product-name">Product Name</div>
+                    <div class="price">$$$</div>
+                </div>
+                <button class="light-button" onclick="trash()">
+                    <span><img class="cart-icon1" src="images/delete.svg" /></span>
+                    <span class="button">Delete</span>
+                </button>
+            </div>
+        </div>
+        <div class="totals">
+            <p class="price3">Subtotal: $$$</p>
+            <h3 class="price2">Total: $$$</h3>
+        </div>
+        <a href="cart.html">
+            <button class="shop-now">Go to Cart</button>
+        </a>
+    </aside>
+
+    <div id="wrapper">
+        <!--Navigation-->
+        <nav>
+            <div class="nav-group-wrapper">
+                <a href="index.html"><div class="logo"></div></a>
+                <p class="brand">School Supply Shop</p>
+            </div>
+            <div class="nav-group-wrapper">
+                <a class="nav-icon-group" onclick="OpenCart()">
+                    <img class="nav-icon" src="images/cart1.svg" />
+                    <div class="nav-text">Cart</div>
+                </a>   
+                <a class="nav-icon-group" href="account.html">
+                    <img class="nav-icon" src="images/account.svg" />
+                    <div class="nav-text">Account</div>
+                </a>
+                <a class="nav-icon-group" href="products.html">
+                    <img class="nav-icon" src="images/shop.svg" />
+                    <div class="nav-text">Shop</div>
+                </a>
+            </div>
+        </nav>
+
+        <section class="products">
+            <h2>My Cart</h2>
+          <div class="group">
+              <div class="product2" id="incart2">
+                <img class="product-image2" src="images/sample-product.jpg" />
+                <div class="product-info2">
+                    <div class="product-info-text">
+                        <div class="product-name">Product Name</div>
+                        <div class="price">$$$</div>
+                    </div>
+                    <div class="product-info-text">
+                        <div class="quantity">
+                            <label for="quantity1">Quantity:</label>
+                            <input type="number" name="quantit1y" id="quantity1" class="quantity" value="1">
+                        </div>
+                        <button class="light-button2" onclick="trash2()">
+                            <span><img class="cart-icon1" src="images/delete.svg" /></span>
+                            <span class="button">Delete</span>
+                        </button>
+                    </div>
+                </div>
+              </div>
+          </div>
+    
+          <div class="group">
+            <div class="product2"id="incart3">
+              <img class="product-image2" src="images/sample-product.jpg" />
+              <div class="product-info2">
+                  <div class="product-info-text">
+                      <div class="product-name">Product Name</div>
+                      <div class="price">$$$</div>
+                  </div>
+                  <div class="product-info-text">
+                      <div class="quantity">
+                          <label for="quantity1">Quantity:</label>
+                          <input type="number" name="quantit1y" id="quantity1" class="quantity" value="1">
+                      </div>
+                      <button class="light-button2" onclick="trash3()">
+                          <span><img class="cart-icon1" src="images/delete.svg" /></span>
+                          <span class="button">Delete</span>
+                      </button>
+                  </div>
+              </div>
+            </div>
+        </div>
+    
+          <div class="group">
+            <div class="product2" id="incart4">
+              <img class="product-image2" src="images/sample-product.jpg" />
+              <div class="product-info2">
+                  <div class="product-info-text">
+                      <div class="product-name">Product Name</div>
+                      <div class="price">$$$</div>
+                  </div>
+                  <div class="product-info-text">
+                      <div class="quantity">
+                          <label for="quantity1">Quantity:</label>
+                          <input type="number" name="quantit1y" id="quantity1" class="quantity" value="1">
+                      </div>
+                      <button class="light-button2" onclick="trash4()">
+                          <span><img class="cart-icon1" src="images/delete.svg" /></span>
+                          <span class="button">Delete</span>
+                      </button>
+                  </div>
+              </div>
+            </div>
+        </div>
+          
+          <div class="totals">
+            <p class="price3">Subtotal: $$$</p>
+            <h3 class="price2">Total: $$$</h3>
+          </div>
+    
+          <div class="button-pair1">
+            <a href="checkout-guest.html"><button class="wide-button2">Checkout as Guest</button></a>
+            <a href="checkout-existing.html"><button class="wide-button">Existing User</button></a>
+        </div>
+        </section>
+
+        <!--Footer-->
+        <footer>
+            <div>
+                <p><a href="cart.html" class="footer-text">View Cart</a></p>
+                <p><a href="account.html" class="footer-text">Edit Profile</a></p>
+                <p><a href="account.html" class="footer-text">My Orders</a></p>
+                <p><a href="products.html #shop-by-category" class="footer-text">Shop By Category</a></p>
+            </div>
+            <p class="footer-text">Sapphire Marien 2024</p>
+        </footer>
+    </div>
+</body>
+
+<script src="script.js"></script>
+</html>
